@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Your Profile</title>
+    <link rel="stylesheet" href="profileopt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <h2>Set your profile</h2>
+            <h3>what are you?</h3>
+            <div class="profile-options">
+                <button class="profile-btn">Teacher</button>
+                <button class="profile-btn">Student</button>
+            </div>
+
+            <div class="form-section">
+                <h4>Contact Information</h4>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label>Gmail</label>
+                        <input type="email" placeholder="your@gmail.com">
+                    </div>
+                    <div class="input-field">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="">
+                    </div>
+                </div>
+
+                <div class="input-field full-width">
+                    <label>Address</label>
+                    <input type="text" placeholder="your full address">
+                </div>
+
+                <div class="input-field full-width">
+                    <label>What are your skills?</label>
+                    <input type="text" placeholder="write your skills">
+                </div>
+
+                <div class="upload-section">
+                    <label>Upload your teaching certificates (for teachers)</label>
+                    <div class="upload-box">
+                        <div class="upload-icon">📄</div>
+                        <p>Drag & drop your certificate files here</p>
+                        <span class="upload-hint">or click to browse files (PDF, JPG, PNG)</span>
+                    </div>
+                </div>
+
+                <button class="save-btn">save profil</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll('.profile-btn');
+      
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => b.classList.remove('active')); // remove from all
+            btn.classList.add('active'); // add to clicked
+          });
+        });
+      </script>
+      
+</body>
+</html>
