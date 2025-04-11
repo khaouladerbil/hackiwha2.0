@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.profile-card {
+    background-color: #f0f7ff;
+    padding: 40px 20px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.profile-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.profile-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d9f0ff;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-btn:hover {
+    background-color: #b8e3ff;
+}
+
+.next-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d9f0ff;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+    background-color: #b8e3ff;
+}
