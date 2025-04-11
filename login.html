@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Lumenia</title>
+  <link rel="stylesheet" href="loginstyle.css">
+  <link  href="https://fonts.google.com/share?selection.family=Roboto+Mono:ital,wght@0,100..700;1,100..700|Roboto:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+  <link  href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2 class="logo">Lumenia</h2>
+      <h4>Welcome to Lumenia..!</h4>
+      
+      <div class="tabs">
+        
+        <button class="tab-btn active">login</button>
+        <button class="tab-btn"> <a href="signin.html">Sign in</a></button>
+      </div>
+
+      <p class="subtitle">Please enter your credentials to login.</p>
+      
+      <form>
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your Email Address" />
+        </div>
+
+      
+
+        <div class="input-group">
+          <label>Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="pwd" class="password" placeholder="Enter your Password" />
+            <img src="eye-close.png" id="eye" class="eyeicon">
+
+        
+
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+    let eyeicon = document.getElementById("eye");
+    let password = document.getElementById("pwd");
+    eyeicon.onclick= function(){
+        if(password.type == "password"){
+            password.type = "text";
+            eyeicon.src = "eye-open.png";
+            
+        }else{ 
+            password.type = "password";
+            eyeicon.src = "eye-close.png";
+        }
+    }
+</script>
+</html>
